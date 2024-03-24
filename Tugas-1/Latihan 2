@@ -1,0 +1,51 @@
+<!-- activity_main.xml -->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/lb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ketik Disini"/>
+    <EditText
+        android:id="@+id/masuktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lb1"/>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masuktext"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="OK"
+        android:textColor="#ffffff"
+        android:background="@drawable/tombol_kotak_bg"/> 
+    <Button
+        android:id="@+id/Batal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masuktext"
+        android:layout_toLeftOf="@id/ok"
+        android:text="Batal"
+        android:textColor="#ffffff"
+        android:background="@drawable/tombol_kotak_bg"/>
+</RelativeLayout>
+
+
+
+
+<!-- file xml drawable "tombol_kotak_bg"  -->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#CCCCCC" />
+        <corners android:radius="8dp" />
+    </shape>
